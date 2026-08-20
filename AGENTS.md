@@ -9,5 +9,8 @@
 - Platform: Vercel
 - Deployment target: Preview only until the user explicitly authorizes Production
 - Preview command: `vercel --yes`
-- Production URL: not configured
+- Explicit Preview command: `vercel deploy --target preview --yes`
+- Protected Preview URL: `https://taurisweft-p40ykb4ps-shaochen-jis-projects.vercel.app`
+- Public URL: `https://taurisweft.vercel.app`
+- Note: the project's first plain `vercel --yes` deployment was classified by Vercel as Production; use the explicit Preview command above for future previews.
 - Health check: load Preview URL, verify page content, interaction, console errors, and responsive layout

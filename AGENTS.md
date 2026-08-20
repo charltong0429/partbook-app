@@ -4,3 +4,10 @@
 - 保留通用英文技术术语，例如 AI、MVP、PRD、SaaS、API、RAG、Agent、GitHub、Vercel Preview。
 - 代码标识符、文件名、提交信息和 API 字段使用英文。
 
+## Deploy Configuration
+
+- Platform: Vercel
+- Deployment target: Preview only until the user explicitly authorizes Production
+- Preview command: `vercel --yes`
+- Production URL: not configured
+- Health check: load Preview URL, verify page content, interaction, console errors, and responsive layout

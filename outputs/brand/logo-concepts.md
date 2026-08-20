@@ -1,7 +1,7 @@
 # TaurisWeft Logo Concepts — Round 01
 
 日期：2026-08-20  
-阶段：Working-name exploration，不是最终商标资产
+阶段：方案 A 已获用户认可；Round 02 SVG 工作资产已建立，不是已注册商标资产
 
 ![TaurisWeft 三方向概念板](logo/taurisweft-concepts-round-01.png)
 
@@ -42,7 +42,13 @@ TaurisWeft 不是“自动发帖机器人”，而是把可信知识编织成不
 
 ## 当前建议
 
-优先推进 A — Signal Loom。B 作为品牌辅助图形语言；C 只用于检验 Tauris 是否需要进入符号，不默认保留。
+用户已认可 A — Signal Loom。Round 02 将结构简化为一根稳定的 `T` 经线与一条连续的 `W` 纬线，以通过小尺寸测试。B 保留为品牌辅助图形语言；C 淘汰。
+
+## Round 02 SVG
+
+- `../../assets/brand/taurisweft-mark.svg`：symbol 工作资产
+- `../../assets/brand/taurisweft-lockup.svg`：横向 lockup 工作资产
+- `../../favicon.svg`：带 Paper 背景的 favicon 工作资产
 
 ## 生产说明
 

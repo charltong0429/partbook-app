@@ -1,4 +1,4 @@
-# Partbook Brand Essentials
+# TaurisWeft Brand Essentials
 
 ## 1. Foundation
 
@@ -16,11 +16,11 @@
 
 **Personality**：清醒、可信、编辑感、克制、有判断。
 
-**Positioning**：Partbook 是面向 B2B 专业人士与团队的 AI 编辑系统，把可信研究变成每个人、每个平台都适合发布的独特内容。
+**Positioning**：TaurisWeft 是面向 B2B 专业人士与团队的 AI 编辑系统，把可信研究变成每个人、每个平台都适合发布的独特内容。
 
 ## 2. Logo
 
-- 主 Logo 为 `P` 字母与三条声部线组成的 symbol + Partbook wordmark。
+- 主 Logo 为编织式 `T/W` symbol + TaurisWeft wordmark；竖向经线形成 `T` 的稳定骨架，三条横向纬线以留白形成 `W` 的节奏。
 - 允许横向、竖向、icon-only、单色反白四种版本。
 - 安全空间至少等于 symbol 内部书脊宽度的 2 倍。
 - 最小尺寸：完整 lockup 96px 宽；icon 16px。
@@ -100,4 +100,3 @@
 - **Brand guardian**：项目 Owner（待指定姓名）。
 - **Assets**：当前统一存放在 `outputs/brand/assets/`；未来迁移到产品 GitHub 仓库与 Figma Library。
 - **Change rule**：Logo、Tagline、Primary color、Voice principles 的修改需要记录日期、理由与批准人。
-

@@ -1,8 +1,8 @@
-# Partbook PRD
+# TaurisWeft PRD
 
 版本：v0.1  
 日期：2026-08-20  
-品牌状态：**Partbook 为推荐工作名，待 24 小时测试与正式商标清查**  
+品牌状态：**TaurisWeft 为用户确认的项目工作名；正式商标、域名与社交账号清查待完成**
 产品阶段：Discovery complete → Focused Team MVP  
 交付目标：GitHub repository + Vercel Preview
 
@@ -17,7 +17,7 @@
 
 ## 1. 一句话总结
 
-Partbook 是面向 B2B 专业人士与小型企业团队的 AI 编辑系统，把可信行业研究转化为符合个人职业定位、公司叙事和不同社交平台语境的内容，让用户在约 3 分钟内得到本人愿意署名、只差发布的草稿与配图。
+TaurisWeft 是面向 B2B 专业人士与小型企业团队的 AI 编辑系统，把可信行业研究转化为符合个人职业定位、公司叙事和不同社交平台语境的内容，让用户在约 3 分钟内得到本人愿意署名、只差发布的草稿与配图。
 
 ## 2. 背景与机会
 
@@ -37,7 +37,7 @@ Partbook 是面向 B2B 专业人士与小型企业团队的 AI 编辑系统，�
 2. 文案越来越同质化，难以体现个人经历与专业判断。
 3. 团队同时使用 AI 后，更容易重复口径而非形成互补声音。
 
-Partbook 的机会是成为“专业声音的编辑基础设施”，把 source、brand memory、platform profile、review 与 team narrative 组织成可复用工作流。
+TaurisWeft 的机会是成为“专业声音的编辑基础设施”，把 source、brand memory、platform profile、review 与 team narrative 组织成可复用工作流。
 
 ## 3. 目标用户与画像
 
@@ -747,14 +747,14 @@ flowchart LR
 | Risk | Type | Impact | Validation / Mitigation |
 |---|---|---|---|
 | 用户只偶尔生成，不形成周留存 | 产品 | 高 | 5 人四周 pilot；看重复 WRPO |
-| 通用 AI 已“足够好” | 市场 | 高 | A/B 对比无 memory vs Partbook；测 edit ratio/time |
+| 通用 AI 已“足够好” | 市场 | 高 | A/B 对比无 memory vs TaurisWeft；测 edit ratio/time |
 | Source citation 仍不可信 | AI/数据 | 高 | 固定 eval set、claim mapping、人工抽检 |
 | Copy/Paste 仍太麻烦 | UX | 高 | 观察 handoff；移动端 deep link/QR 作为 P1 |
 | 团队不愿共享或被统一管理 | 组织 | 高 | private/shared 边界；成员自主发布 |
 | Platform API 权限变化 | 集成 | 中 | Channel Adapter；核心价值不依赖 API |
 | 上传 CV/公司资料引发隐私顾虑 | 合规 | 高 | 最小化、删除、retention、DPA、加密 |
 | AI 成本不可控 | 商业 | 中 | task routing、quota、缓存、cost trace |
-| Partbook 名称冲突 | 品牌/法律 | 中 | 正式商标清查；未确认前不投入正式资产 |
+| TaurisWeft 名称冲突 | 品牌/法律 | 中 | 正式商标、域名和社交账号清查；未确认前不投入不可逆的正式资产 |
 | 多平台范围失控 | 交付 | 高 | P0 仅 LinkedIn + WeChat；adapter contract 先行 |
 
 ## 26. Roadmap（建议基线 / 待确认）
@@ -791,7 +791,7 @@ flowchart LR
 
 ### Repository
 
-建议仓库名：`partbook`；若 GitHub 组织使用 `partbookhq`，仓库可为 `partbook-app`。
+当前仓库沿用 `charltong0429/partbook-app`；待 TaurisWeft 名称清查通过后，再决定是否改为 `taurisweft-app` 以及是否建立独立 GitHub 组织。
 
 ```text
 app/
@@ -871,7 +871,7 @@ docs/
 
 1. **最推荐切口**：Founder User + DifferPower 小团队，LinkedIn + WeChat，两种语言/语境最能证明 adaptation 价值。
 2. **最应该砍掉**：任何自动发布、自动互动和全平台覆盖；它们会先带来合规与集成成本，却不能证明核心留存。
-3. **最关键实验**：比较“通用 AI 手工流程”与 Partbook 在 Time-to-Ready、major rewrite rate、source coverage 和一周后复用上的差异。
+3. **最关键实验**：比较“通用 AI 手工流程”与 TaurisWeft 在 Time-to-Ready、major rewrite rate、source coverage 和一周后复用上的差异。
 4. **最值得提前设计**：Brand Memory versioning、claim-to-source mapping、Channel Adapter、AI eval 与 audit；这些后补成本高。
 5. **最容易误判的指标**：生成次数、字数、打开率和点击 Copy。真正指标是 Ready/Published confirmation、周复用与人工修改下降。
 
@@ -886,7 +886,7 @@ docs/
 7. 是否允许 Member 草稿默认 private？Owner 需要看到哪些状态？
 8. 期望的 MVP 上线日期、开发人数与预算？
 9. 外部 SaaS 的第一付费对象是个人还是团队？
-10. Partbook 是否通过 24 小时测试与正式商标清查，还是需要进行第二轮命名？
+10. TaurisWeft 是否通过口头测试、域名/社交账号核验与正式商标清查，还是需要继续保留备选名？
 
 ---
 
@@ -902,4 +902,3 @@ MVP 只有在以下条件全部满足时才算完成：
 - Workspace 权限、数据隔离、audit 与删除/导出路径通过测试。
 - AI eval、核心 E2E、security review 与 Preview/Production 隔离通过。
 - 至少 3 名 pilot 用户在两周内重复完成一次 Ready-to-Publish loop。
-

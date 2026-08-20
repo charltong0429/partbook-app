@@ -1,8 +1,8 @@
-# Partbook
+# TaurisWeft
 
 **One source. Many trusted voices.**
 
-Partbook 是一个面向专业人士与企业团队的 AI Social Content OS，帮助个人和团队把可信来源转化为适合不同成员、不同渠道的专业内容。
+TaurisWeft 是一个面向专业人士与企业团队的 AI Social Content OS，帮助个人和团队把可信来源转化为适合不同成员、不同渠道的专业内容。
 
 ## 当前阶段
 

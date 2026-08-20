@@ -1,19 +1,21 @@
-# Partbook Visual Identity Brief
+# TaurisWeft Visual Identity Brief
 
 ## 01 — Identity Strategy
 
-Partbook 的视觉应像一间现代编辑室，而不是一个“AI 魔法工具”。系统感来自严格网格、谱线与清晰状态；人性来自纸张质感、编辑批注和可见的个人声部。整体应专业、克制、可信，但不能像传统 Enterprise SaaS 那样冷硬。
+TaurisWeft 的视觉应把“稳定的知识骨架”与“不断穿行的个人观点”放在同一系统里：Tauris 提供沉着、可靠和长期主义，Weft 提供编织、多声部与持续形成。整体像一间现代编辑室与精密织机的结合，而不是一个“AI 魔法工具”；系统感来自严格网格与清晰状态，人性来自纸张质感、编辑批注和可见的个人声部。
 
 ## 02 — Logo Direction
 
 ### Primary Direction
 
-采用 **symbol + wordmark**。符号由一条竖直书脊与 3–4 条平行“声部线”构成：线条从同一源点进入，在右侧形成不同长度和节奏，同时负空间读出字母 `P`。它同时像：
+采用 **symbol + wordmark**，主方向命名为 **Signal Loom / 信号织机**。符号以 `T` 的竖向经线作为稳定骨架，三条横向纬线交替穿过中心；线条的错位与留白形成抽象 `W`，并表现一份可信 source 被不同个人视角重新编排。顶部横梁只允许极轻微外展，可在远看时带来 Tauris 的力量感，但不能直接读成牛角。
 
-- 打开的 Partbook；
-- 乐谱中的多个声部；
-- 编辑器中的多行文字；
-- 从共同 source 分出的多平台内容。
+符号需要同时成立于四种尺度：16px app/favicon、社交头像、产品页眉横向 lockup、黑白打印。Wordmark 使用定制化 Instrument Sans 起稿，保留 `T` 与 `W` 的大写结构，字距偏紧但不连写。
+
+### Secondary Explorations
+
+1. **Editorial Weave**：以两列文本 rail 和一条穿行的 accent line 表达 source、revision 与 output，编辑感更强，字母暗示更弱。
+2. **Taurus Trace**：以单线构成稳定拱形与隐藏 `TW`，仅保留结构上的力量感；若任何版本看起来像体育队、汽车或投资机构，立即淘汰。
 
 ### Character
 
@@ -21,23 +23,24 @@ Partbook 的视觉应像一间现代编辑室，而不是一个“AI 魔法工�
 
 ### Style Notes
 
-- 构造型几何 Logo，线端略带人文切角。
+- 构造型几何 Logo，使用一致笔画与明确的 over-under 交错关系，线端略带人文切角。
 - 1 色时必须成立，优先横向 lockup。
-- App icon 使用 `P + 三条声部线`，在 16px 仍可辨认。
-- Motion 版本可让一条输入线分成多声部，再在末端停成发布就绪状态。
+- App icon 只使用 Signal Loom symbol，在 16px 仍可辨认。
+- Motion 版本可让一条纬线穿过竖向经线，依次显现多个声部，再停成发布就绪状态。
 
 ### Avoid
 
 - AI sparkle、机器人头、脑神经网络、火箭、魔法棒。
 - 通用 speech bubble、点赞手势、LinkedIn 蓝。
 - 复杂的节点网络、渐变霓虹、3D 玻璃球。
-- 把书本画得过于字面或教育产品化。
+- 字面牛头、牛角、星座点阵、盾徽，以及任何容易联想到金融、汽车、体育战队的攻击性轮廓。
+- 把编织画成布料、毛线团或手工艺品牌。
 
 ### Reference Qualities
 
 - **Linear**：借鉴其紧凑几何与产品精度，不复制其字形或紫色光效。
-- **Stripe**：借鉴其专业而不官僚的 wordmark 可信度。
-- **IBM 8-bar mark**：借鉴“平行线能构成一个强符号”的原则，不复制条纹数量和轮廓。
+- **IBM 8-bar mark**：借鉴“平行线与留白能构成强符号”的原则，不复制条纹数量和轮廓。
+- **Monocle**：借鉴其编辑品牌的克制与高识别 wordmark，不复制字体。
 
 ## 03 — Color Palette
 
@@ -80,9 +83,8 @@ Partbook 的视觉应像一间现代编辑室，而不是一个“AI 魔法工�
 
 ## 08 — Brand Expressions
 
-- **Website**：首屏使用 Partbook 符号的“单线分声部”动效，主 CTA 指向创建第一份 Research Brief。
+- **Website**：首屏使用 TaurisWeft 符号的“纬线穿梭”动效，主 CTA 指向创建第一份 Research Brief。
 - **App**：左侧 source 与 workflow，中央 editor，右侧 platform preview；颜色用于状态而非装饰。
 - **Social cards**：Paper 背景、Ink 文字、Cobalt 声部线；右下角使用小型 `P` mark 与 source count。
 - **Deck**：每页只保留一个关键观点，引用与证据固定在底部 rail。
 - **Profile assets**：头像框、banner 和 Featured cards 均使用相同声部线，不用重复 Logo 满版。
-

@@ -1,7 +1,7 @@
 # Brand Context
 
 ## Brand
-- **Name**: Social Content OS（工作名，待命名流程确定）
+- **Name**: TaurisWeft（工作名；正式商标、域名与社交账号核验待完成）
 - **Category**: AI Social Content OS / Employee Advocacy & Personal Branding SaaS
 - **Description**: 面向专业人士与企业团队，将持续行业研究转化为可信、个性化、可预览、可人工确认并适配多平台发布的内容工作流。
 - **Stage**: Pre-launch / Product discovery
@@ -38,4 +38,3 @@
 - **Architecture**: 独立 SaaS 品牌，未来可包含 Research、Studio、Profile、Campaigns、Channels 等产品模块。
 - **Off-limits**: AI、Social、Content、Post、Pilot、Magic、Smart、Neuro 等直接作为品牌名核心；避免“XXFlow / XXHub / XXForge / XXly”类 AI slop。
 - **Required platforms**: 商业 SaaS 域名、GitHub 组织/仓库、LinkedIn Company 名称；精确 .com 非硬门槛，可接受有意义的 .app/.co 或 get/use 前缀域名。
-

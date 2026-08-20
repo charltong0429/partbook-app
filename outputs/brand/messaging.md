@@ -1,12 +1,12 @@
-# Partbook Messaging Framework
+# TaurisWeft Messaging Framework
 
 ## 01 — Core Message
 
-Partbook 帮助 B2B 专业人士和企业团队，把可信研究转化为符合个人身份、公司叙事和不同平台语境的可发布内容。
+TaurisWeft 帮助 B2B 专业人士和企业团队，把可信研究转化为符合个人身份、公司叙事和不同平台语境的可发布内容。
 
 ## 02 — Value Proposition
 
-Partbook 把 research、source、draft、visual、preview 与 profile memory 放进一个可审核的编辑工作流。用户不再从空白页开始，也不需要让所有员工复制同一段公司文案；同一事实基础可以长成多个可信、互补、有个人辨识度的专业声部。
+TaurisWeft 把 research、source、draft、visual、preview 与 profile memory 放进一个可审核的编辑工作流。用户不再从空白页开始，也不需要让所有员工复制同一段公司文案；同一事实基础可以长成多个可信、互补、有个人辨识度的专业声部。
 
 ## 03 — Tagline Options
 
@@ -29,7 +29,7 @@ One source. Many trusted voices.
 ### Level 3 — Key Messages
 
 **Start from evidence, not a blank page**  
-Partbook 先组织 source、事实与可用角度，再生成内容。每个事实性主张都能回到依据。  
+TaurisWeft 先组织 source、事实与可用角度，再生成内容。每个事实性主张都能回到依据。
 Proof：Research Brief、source card、claim-to-source link。
 
 **Keep the person in the post**  
@@ -93,4 +93,3 @@ Proof：Review state、approval log、Copy/Open channel handoff。
 - “Fully automate your LinkedIn”
 - “Go viral with one click”
 - “Revolutionary / game-changing / magical”
-

@@ -3,6 +3,12 @@
 日期：2026-08-20  
 范围：英文/全球中性 SaaS 品牌名、商业域名、GitHub 组织名、初步 prior-art 过滤。
 
+## Working-name decision
+
+用户于 2026-08-20 选择 **TaurisWeft** 作为项目工作名，取代此前推荐的 Partbook。`Tauris` 提供稳定、可信与长期建设感，`Weft` 表达把共享知识与不同个人观点编织成多声部内容系统。该决定授权产品文档与 Logo 探索继续推进，但不等于完成商标、域名、LinkedIn Company 名称或社交 handle 清查。
+
+命名历史保留在下文，用于记录 Partbook、Weft、DiWelft 等方向的评估依据。TaurisWeft 的正式 prior-art 与可用性筛查将在外部检索条件恢复后单独补充。
+
 ## 1. Naming Brief
 
 - **核心功能**：把可信研究与企业知识转化为符合不同个人身份、公司叙事和平台语境的可发布内容。
@@ -102,13 +108,12 @@
 - **Sourcefold**：淘汰。`sourcefold.com` 已重定向至 Cognitude Labs，一家面向 knowledge-intensive professionals 的 applied AI 公司，受众和 AI namespace 过近。
 - **Weft / Galley / Rostra / Counterpoint / Braid / Pressmark**：精确域名、组织名或同类 prior-art 密度过高；不降低闸门继续推进。
 
-## 5. Recommendation
+## 5. Superseded Recommendation
 
-选择 **Partbook** 作为 PRD 和后续设计的推荐工作名，但在投入正式 Logo、域名购买或公开发布前完成：
+以下为本轮研究当时的推荐，已被用户选择的 **TaurisWeft** 工作名取代。正式 Logo、域名购买或公开发布前仍应完成：
 
 1. 连续 24 小时在产品介绍、会议、口头推荐和域名中反复使用。
 2. 让 5 名不参与本次命名的人先听名字，再复述、拼写并猜测产品性格。
 3. 对 EUIPO、USPTO、WIPO 与目标国家做正式商标清查，重点覆盖 SaaS、software、marketing、publishing、social media 类别。
 4. 人工确认 LinkedIn Company 名称与主要社交 handle。
 5. 确认后再注册域名；本次没有购买任何域名。
-

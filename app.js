@@ -224,7 +224,8 @@ function renderResearch() {
             <div class="field full"><label for="claims">可引用的关键事实 *</label><textarea id="claims" name="claims" required placeholder="每行一条事实或 claim&#10;例如：动态电价正在与设备控制融合"></textarea></div>
             <div class="field full"><label for="brief-tags">标签</label><input id="brief-tags" name="tags" placeholder="energy, pricing, Europe" /></div>
           </div>
-          <div class="form-actions"><button class="primary-button" type="submit">保存 Research Brief</button><button class="secondary-button" type="button" data-action="load-example">载入示例</button></div>
+          <div class="form-actions"><button class="primary-button" type="submit">保存 Research Brief</button><button class="secondary-button" type="button" data-action="load-example">载入示例</button><button class="secondary-button" type="button" data-action="load-differ-findings">从 Differ Market Intel 拉取</button></div>
+          <div class="differ-picker" id="differ-picker"></div>
         </form>
       </article>
       <div>${cards}</div>
@@ -426,6 +427,52 @@ function loadExample() {
   toast("示例已载入，请检查后保存");
 }
 
+let differFindingsCache = [];
+
+async function loadDifferFindings() {
+  const picker = document.querySelector("#differ-picker");
+  if (!picker) return;
+  picker.innerHTML = `<p class="hint">正在从 Differ Market Intel 拉取已审核的市场发现…</p>`;
+  try {
+    const response = await fetch("/api/findings?limit=5");
+    if (!response.ok) throw new Error("request failed");
+    const data = await response.json();
+    differFindingsCache = Array.isArray(data.findings) ? data.findings : [];
+    if (!differFindingsCache.length) {
+      picker.innerHTML = `<p class="hint">目前没有已审核通过的市场发现。</p>`;
+      return;
+    }
+    picker.innerHTML = differFindingsCache
+      .map((finding) => `
+        <button type="button" class="differ-pick" data-action="pick-differ-finding" data-id="${escapeHtml(finding.id)}">
+          <strong>${escapeHtml(finding.title)}</strong>
+          <span>${escapeHtml(excerpt(finding.summary, 90))}</span>
+        </button>`)
+      .join("");
+  } catch {
+    picker.innerHTML = `<p class="hint">拉取失败，请稍后重试，或改用上方手工粘贴。</p>`;
+  }
+}
+
+function pickDifferFinding(id) {
+  const finding = differFindingsCache.find((item) => item.id === id);
+  if (!finding) return;
+  const primarySource = finding.sources?.[0];
+  const fields = {
+    "brief-title": finding.title,
+    "source-name": finding.sources?.map((source) => source.publisher).join(" · ") || "Differ Market Intel",
+    "source-url": primarySource?.url || "",
+    "source-text": [finding.summary, finding.fact, finding.inference, finding.productImpact].filter(Boolean).join("\n\n"),
+    claims: [finding.fact, finding.inference, finding.productImpact].filter(Boolean).join("\n"),
+    "brief-tags": [...(finding.countries || []), ...(finding.topics || [])].join(", "),
+  };
+  Object.entries(fields).forEach(([fieldId, value]) => {
+    const field = document.querySelector(`#${fieldId}`);
+    if (field) field.value = value;
+  });
+  toast("已载入 Differ Market Intel 的市场发现，请检查后保存");
+}
+
 function generateDraftPair() {
   const brief = getSelectedBrief();
   const drafts = ["linkedin", "wechat"].map((platform) => generateDraft({ brief, brand: state.brand, platform, angleKey: state.ui.angleKey }));
@@ -548,6 +595,8 @@ main.addEventListener("click", (event) => {
   const { action, id, platform, filter, versionId } = target.dataset;
   if (action === "new-brief") setView("research");
   if (action === "load-example") loadExample();
+  if (action === "load-differ-findings") loadDifferFindings();
+  if (action === "pick-differ-finding") pickDifferFinding(id);
   if (action === "use-brief") { state.ui.selectedBriefId = id; state.ui.selectedDraftId = null; persist(); setView("studio"); }
   if (action === "generate-drafts") generateDraftPair();
   if (action === "open-draft") {

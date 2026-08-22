@@ -5,7 +5,7 @@
   "description": "TaurisWeft brand and product preview",
   "type": "module",
   "scripts": {
-    "check": "node scripts/check.mjs && node --check app.js && node --check about.js && node --check lib/draft-engine.js",
+    "check": "node scripts/check.mjs && node --check app.js && node --check about.js && node --check lib/draft-engine.js && node --check lib/findings-proxy.js && node --check api/findings.js",
     "test": "node --test tests/*.test.mjs"
   },
   "engines": {

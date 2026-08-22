@@ -3,118 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="TaurisWeft 把可信知识编织成每个人愿意署名的专业声音。" />
-    <meta name="theme-color" content="#F6F4EE" />
-    <title>TaurisWeft · One source. Many trusted voices.</title>
+    <meta name="description" content="TaurisWeft local-first 专业内容编辑工作台" />
+    <meta name="theme-color" content="#0d1320" />
+    <title>TaurisWeft · 编辑工作台</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <script type="module" src="app.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="TaurisWeft 首页">
-        <img src="assets/brand/taurisweft-mark.svg" alt="" width="36" height="36" />
-        <span>TaurisWeft</span>
-      </a>
-      <div class="header-meta">
-        <span class="status-dot" aria-hidden="true"></span>
-        Brand Preview · Round 02
-      </div>
-    </header>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主要导航">
+        <a class="brand-lockup" href="#today" data-view-link="today" aria-label="TaurisWeft 工作台">
+          <img src="assets/brand/taurisweft-mark.svg" alt="" width="38" height="38" />
+          <span>TaurisWeft</span>
+        </a>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">AI editorial system for professional voice</p>
-          <h1>把可信知识，织成每个人愿意署名的专业声音。</h1>
-          <p class="hero-lede">从持续研究、事实核验到个人视角和平台适配，TaurisWeft 让团队共享同一份可信来源，同时保留每个人真正不同的判断。</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#preview">查看声音预览</a>
-            <a class="button secondary" href="https://github.com/charltong0429/partbook-app" rel="noreferrer">GitHub Repository</a>
-          </div>
-          <p class="tagline">One source. Many trusted voices.</p>
-        </div>
+        <nav class="primary-nav">
+          <button type="button" data-view="today" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span>今日工作台</span>
+          </button>
+          <button type="button" data-view="research">
+            <span class="nav-icon" aria-hidden="true">S</span>
+            <span>Research</span>
+            <span class="nav-count" id="brief-count">0</span>
+          </button>
+          <button type="button" data-view="studio">
+            <span class="nav-icon" aria-hidden="true">W</span>
+            <span>Studio</span>
+          </button>
+          <button type="button" data-view="library">
+            <span class="nav-icon" aria-hidden="true">L</span>
+            <span>Library</span>
+            <span class="nav-count" id="draft-count">0</span>
+          </button>
+          <button type="button" data-view="brand">
+            <span class="nav-icon" aria-hidden="true">B</span>
+            <span>Brand Memory</span>
+          </button>
+        </nav>
 
-        <div class="loom-card" aria-label="TaurisWeft Signal Loom Logo">
-          <span class="card-label">SIGNAL LOOM / 02</span>
-          <img src="assets/brand/taurisweft-mark.svg" alt="TaurisWeft Signal Loom 标志" />
-          <div class="loom-key">
-            <span><i class="ink"></i>稳定的知识经线</span>
-            <span><i class="cobalt"></i>穿行的个人纬线</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="principles" aria-label="产品原则">
-        <article>
-          <span>01</span>
-          <h2>Source-grounded</h2>
-          <p>先组织 source、事实与证据，再生成内容。每个事实性观点都能回到依据。</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>Distinct voices</h2>
-          <p>同一主题进入不同人的角色、经验和目标，不把团队变成统一口径的复读机。</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h2>Human approval</h2>
-          <p>AI 完成研究与编辑准备，最终署名、判断和发布决定始终属于人。</p>
-        </article>
-      </section>
-
-      <section class="voice-preview" id="preview">
-        <div class="section-heading">
-          <p class="eyebrow">One brief, three perspectives</p>
-          <h2>同一事实，不同专业声部。</h2>
-          <p>选择角色，看看一份 Research Brief 如何形成不同的可发布角度。</p>
-        </div>
-
-        <div class="preview-shell">
-          <div class="source-panel">
-            <span class="panel-label">TRUSTED SOURCE</span>
-            <p class="source-title">欧洲动态电价正在从“省钱工具”变成家庭能源系统的控制层。</p>
-            <div class="source-meta">
-              <span>4 sources</span>
-              <span>8 claims verified</span>
-              <span class="verified">Ready</span>
+        <div class="sidebar-footer">
+          <div class="local-mode">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <div>
+              <strong>本地可用模式</strong>
+              <span>数据只保存在此浏览器</span>
             </div>
           </div>
+          <a href="about.html">查看品牌介绍</a>
+        </div>
+      </aside>
 
-          <div class="voice-panel">
-            <div class="voice-tabs" role="tablist" aria-label="选择专业角色">
-              <button type="button" role="tab" aria-selected="true" data-voice="product">Product</button>
-              <button type="button" role="tab" aria-selected="false" data-voice="market">Market</button>
-              <button type="button" role="tab" aria-selected="false" data-voice="founder">Founder</button>
-            </div>
-            <div class="draft-card" aria-live="polite">
-              <div class="draft-meta">
-                <span id="voice-role">Product Director</span>
-                <span>LinkedIn · Draft</span>
-              </div>
-              <h3 id="voice-title">真正的产品机会，不在多一个电价页面。</h3>
-              <p id="voice-body">动态电价只有进入热泵、储能和 EV 的自动控制闭环，才会从“用户需要每天关注的数据”变成“系统替用户持续做出的更好决定”。</p>
-              <div class="draft-footer">
-                <span>Source coverage 100%</span>
-                <button type="button" id="approve-button">标记为可发布</button>
-              </div>
-            </div>
+      <section class="workspace">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobile-menu" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+          <div class="breadcrumb">
+            <span>PERSONAL WORKSPACE</span>
+            <strong id="view-title">今日工作台</strong>
           </div>
-        </div>
-      </section>
+          <div class="topbar-actions">
+            <button class="quiet-button" type="button" id="export-workspace">导出数据</button>
+            <label class="quiet-button file-button">
+              导入数据
+              <input id="import-workspace" type="file" accept="application/json" />
+            </label>
+            <button class="primary-button" type="button" data-action="new-brief">+ 新建 Brief</button>
+          </div>
+        </header>
 
-      <section class="identity-note">
-        <div>
-          <p class="eyebrow">The mark</p>
-          <h2>一条稳定经线，一条持续穿行的纬线。</h2>
+        <div class="mode-banner" role="note">
+          <strong>现在可以真实使用。</strong>
+          <span>Research、Brand Memory、双平台草稿、版本、Ready 状态、Copy 与导出都在浏览器内运行。当前不调用外部 AI，也不会上传你的材料。</span>
+          <button type="button" data-dismiss-banner aria-label="关闭说明">×</button>
         </div>
-        <p>竖向 `T` 代表长期积累的可信知识骨架；连续的 `W` 代表个人观点在其中穿行、转向和形成。符号没有牛头、星座或 AI sparkle，也不依赖平台蓝色。</p>
-      </section>
-    </main>
 
-    <footer>
-      <img src="assets/brand/taurisweft-lockup.svg" alt="TaurisWeft" />
-      <p>Working name and identity preview. Trademark and domain clearance pending.</p>
-    </footer>
+        <main id="app-main" tabindex="-1"></main>
+      </section>
+    </div>
+
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
   </body>
 </html>
